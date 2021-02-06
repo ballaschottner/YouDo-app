@@ -6,16 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById("todo-list");
     const todoValue = document.getElementById("todo_input");
     const inputValidation = document.getElementById("validation");
-    const node = document.createElement("li")
-
 
     addBtn.addEventListener("click", function () {
 
         const todoTxt = todoValue.value;
         const liElem = document.createElement("li");
         const remove = document.createElement("button");
-
-        node.innterHMTL = `<p>${todoTxt} <button>X</button></p>`;
 
         liElem.textContent = todoTxt;
         remove.textContent = "delete";

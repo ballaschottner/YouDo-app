@@ -14,10 +14,20 @@
 <form id="todo">
   <label for="todo_input">What do yo want to-do?</label><br>
   <input type="text" id="todo_input" name="todo" placeholder="Type here your TODOs"><br>
+
   <label for="todo_date">Due date?</label><br>
   <input type="date" id="todo_date" name="todo"><br>
+
+  <label for="priority">Priority:</label>
+  <select name="priority" id="priority">
+    <option value="high">low</option>
+    <option value="medium">medium</option>
+    <option value="high">high</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
 </form>
-<p id="validation">Minimum 6 karakter szükségesnek kell lennie a feladatnak</p>
+<p id="validation">Minimum 6 karakter kell a feladat leírásához</p>
 <button id="addBtn">Add todo</button>
 
 <ol id="todo-list">
